@@ -14,5 +14,14 @@
     "cors": "^2.8.5",
     "express": "^5.2.1",
     "mongoose": "^9.1.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ili2z78/serveur_web_tp_final_Arichi_Ilian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ili2z78/serveur_web_tp_final_Arichi_Ilian/issues"
+  },
+  "homepage": "https://github.com/ili2z78/serveur_web_tp_final_Arichi_Ilian#readme"
 }

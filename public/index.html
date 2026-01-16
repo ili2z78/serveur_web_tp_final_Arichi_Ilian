@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech-Native Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tech-Native Marketplace</h1>
+  </header>
+
+  <main>
+    <!-- Dashboard Admin -->
+    <section id="admin-dashboard">
+      <h2>Dashboard Admin</h2>
+      <form id="add-category-form">
+        <input type="text" id="category-name" placeholder="Nom de la catégorie" required>
+        <button type="submit">Ajouter Catégorie</button>
+      </form>
+      <form id="add-user-form">
+        <input type="text" id="user-username" placeholder="Nom d'utilisateur" required>
+        <input type="email" id="user-email" placeholder="Email" required>
+        <select id="user-role">
+          <option value="client">Client</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit">Ajouter Utilisateur</button>
+      </form>
+      <form id="add-product-form">
+        <input type="text" id="product-name" placeholder="Nom du produit" required>
+        <input type="number" id="product-price" placeholder="Prix" min="0" required>
+        <input type="number" id="product-stock" placeholder="Stock" min="0" required>
+        <select id="product-category" required>
+          <option value="">Sélectionner une catégorie</option>
+        </select>
+        <button type="submit">Ajouter Produit</button>
+      </form>
+      <div id="product-list"></div>
+    </section>
+
+    <!-- Boutique Client -->
+    <section id="client-shop">
+      <h2>Boutique Client</h2>
+      <div id="price-filter">
+        <label for="price-range">Filtrer par prix max:</label>
+        <input type="range" id="price-range" min="0" max="1000" value="1000">
+        <span id="price-value">1000€</span>
+      </div>
+      <div id="product-cards"></div>
+    </section>
+
+    <!-- Espace Interaction -->
+    <section id="interaction-space">
+      <h2>Espace Interaction</h2>
+      <form id="add-review-form">
+        <select id="review-user" required>
+          <option value="">Sélectionner un utilisateur</option>
+        </select>
+        <select id="review-product" required>
+          <option value="">Sélectionner un produit</option>
+        </select>
+        <textarea id="review-comment" placeholder="Votre commentaire" required></textarea>
+        <input type="number" id="review-rating" min="1" max="5" placeholder="Note (1-5)" required>
+        <button type="submit">Laisser un Avis</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
